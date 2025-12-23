@@ -17,12 +17,13 @@ const userSchema=new mongoose.Schema({
     assistantName:{
         type:String
     },
-    assistantImage:{
+     assistantImage:{
         type:String
     },
     history:[
         {type:String}
     ]
+
 },{timestamps:true})
 
 const User=mongoose.model("User",userSchema)
